@@ -63,28 +63,22 @@ API предоставляет встроенную документацию. Ч
 
   {
     "name": "Charlie",
-    "age": 3,
-    "breed": "Labrador"
+    "pk": 1,
+    "breed": "Tax"
   }
   ```
 
 - **Обновление данных о собаке**:
 
   ```http
-  PUT /dogs/{dog_id}
+  PATCH /dogs/{pk}
   Content-Type: application/json
 
   {
-    "name": "Charlie",
-    "age": 4,
-    "breed": "Labrador"
+    "name": "Max",
+    "pk": 1,
+    "breed": "Tax"
   }
-  ```
-
-- **Удаление собаки**:
-
-  ```http
-  DELETE /dogs/{dog_id}
   ```
 
 ## Ссылки
